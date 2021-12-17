@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "B Nazanin";
+    direction: rtl;
+    overflow-x: hidden;
+}
+.header-direction{
+    direction: rtl;
+}
+.header-image-default{
+    width: 100%;
+    background: url('./header.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.property-center{
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    border-radius: 50%;
+}
