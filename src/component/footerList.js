@@ -3,7 +3,7 @@ import {
     Col
   } from "reactstrap";
   
-import logo from "../logo.png"
+import logo from "../pictures/logo.png"
 
 const footerList = () => {
 

@@ -14,7 +14,7 @@ body{
 }
 .header-image-default{
     width: 100%;
-    background: url('./header.png') no-repeat center center fixed;
+    background: url('../src/pictures/header.png') no-repeat center center fixed;
     background-size: cover;
 }
 .property-center{
@@ -23,3 +23,20 @@ body{
     background-color: royalblue;
     border-radius: 50%;
 }
+.header-animation{
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

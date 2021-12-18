@@ -1,7 +1,7 @@
 import React from "react";
 import { UncontrolledCarousel, Row, Col } from "reactstrap";
-import pic1 from '../1.png';
-import pic2 from '../2.png';
+import pic1 from '../pictures/1.png';
+import pic2 from '../pictures/2.png';
 
 const items = [
   {

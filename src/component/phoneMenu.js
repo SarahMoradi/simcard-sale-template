@@ -9,11 +9,13 @@ import {
     Nav,
     NavItem,
     NavLink,
-    Badge
+    Badge,
+    Button
   } from "reactstrap";
 
 import { HiShoppingCart } from "react-icons/hi";
 import { SiNintendonetwork } from "react-icons/si";
+import '../index.css'
 
 const phoneMenu = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -24,6 +26,8 @@ const phoneMenu = () => {
         { href: "#about", text: "سوالات پرتکرار" },
         { href: "#cata", text: " پشتیبانی" },
         { href: "#test", text: "درباره نیترون" },
+        { href: "#cata", text: " ثبت نام" },
+        { href: "#test", text: "ورود" },
       ];
     
       const createNavItem = ({ href, text, className }) => (
@@ -72,20 +76,28 @@ const phoneMenu = () => {
 
       <div className="d-none d-md-block header-direction">
         <Row sm="12">
-          <Col sm="3" className="bg-primary text-light text-center py-1">
-          <div>
-          ورود | ثبت نام
-          </div>
-          </Col>
-          <Col sm="3" className="bg-primary text-light text-center">
+          <Col sm="3" className="bg-primary text-light text-center d-flex py-1 justify-content-center">
+          
+              <a herf="#">
+                <Button style={{width: '100px'}} color="dark" className='mx-1 d-flex align-items-center justify-content-center'>
+                ورود
+                </Button>
+              </a>
+              <a herf="#">
+              <Button style={{width: '100px'}} color="dark">
+                ثبت نام
+                </Button>
+              </a>
           
           </Col>
-          <Col sm="3" className="bg-primary text-light text-center">
-            
+          <Col sm="6" className="bg-primary text-light text-center">
+              <p className='header-animation pt-2'>⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ ⬢ ⬡ </p>
           </Col>
           <Col sm="3" className="bg-primary text-light text-center py-1">
-              سبد خرید |
-              <HiShoppingCart />
+              <Button color="dark" style={{width: '150px'}}>
+                <HiShoppingCart className='mx-2'/>
+                سبد خرید 
+              </Button>
             
           </Col>
         </Row>

@@ -9,10 +9,10 @@ import {
     CardSubtitle,
     CardText
   } from "reactstrap";
-import packagew from '../package.jpg';
-import credit from '../credit.jpg'
-import payment from '../payment.jpg'
-import password from '../password1.jpg'
+import packagew from '../pictures/package.jpg';
+import credit from '../pictures/credit.jpg'
+import payment from '../pictures/payment.jpg'
+import password from '../pictures/password1.jpg'
 
 const services = () => {
     return(
