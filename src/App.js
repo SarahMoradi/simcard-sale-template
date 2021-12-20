@@ -1,39 +1,16 @@
-import "bootstrap/dist/css/bootstrap.css";
-import {
-  Row,
-  Col
-} from "reactstrap";
-import "./index.css";
-import DefaultCarousel from "./component/carousel";
-import Services from "./component/services";
-import Property from "./component/property";
-import DesktopMenu from "./component/desktopMenu";
-import PhoneMenu from "./component/phoneMenu";
-import FooterList from "./component/footerList";
+
+import { Route, Routes } from 'react-router-dom';
+import Signup from './component/Signup'
+import Login from './component/Login';
+import Main from './MainPage'
 
 function App() {
   return (
-    <div className="App">
-      {/*in the phone scale*/}
-      <PhoneMenu />
-
-      {/*in the desktop scale*/}
-      <DesktopMenu />
-
-      <Row>
-        <div>
-          <DefaultCarousel />
-        </div>
-      </Row>
-      <Services />
-      <Property />
-      <FooterList />
-      <Row>
-        <Col sm="12" className='bg-dark text-light d-flex justify-content-center py-3'>
-            کپی رایت © - ۱۴۰۰- تیم طراح و توسعه دهنده نیترون
-        </Col>
-      </Row>
-    </div>
+      <Routes>
+        <Route path="login" element={<Login/>} />
+        <Route path="signup" element={<Signup/>} />
+        <Route exact path="/" element={<Main/>} />
+      </Routes>
   );
 }
 
