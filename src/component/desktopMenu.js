@@ -40,7 +40,7 @@ const desktopMenu = () => {
                   >
                     <Badge
                       style={{
-                        width: "90px",
+                        width: "110px",
                         height: "30px",
                         paddingTop: "8px",
                       }}
@@ -55,7 +55,7 @@ const desktopMenu = () => {
                   <NavLink href="#">
                     <Badge
                       style={{
-                        width: "90px",
+                        width: "105px",
                         height: "30px",
                         paddingTop: "8px",
                       }}
@@ -70,7 +70,7 @@ const desktopMenu = () => {
                   <NavLink href="#">
                     <Badge
                       style={{
-                        width: "90px",
+                        width: "100px",
                         height: "30px",
                         paddingTop: "8px",
                       }}
@@ -85,7 +85,7 @@ const desktopMenu = () => {
                   <NavLink href="#">
                     <Badge
                       style={{
-                        width: "90px",
+                        width: "100px",
                         height: "30px",
                         paddingTop: "8px",
                       }}
@@ -100,7 +100,7 @@ const desktopMenu = () => {
                   <NavLink href="#">
                     <Badge
                       style={{
-                        width: "90px",
+                        width: "100px",
                         height: "30px",
                         paddingTop: "8px",
                       }}
