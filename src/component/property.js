@@ -9,7 +9,7 @@ import { BsFillCloudDownloadFill } from "react-icons/bs";
 const property =() =>{
     return(
         <>
-            <Row className='mt-4 d-flex justify-content-center bg-dark py-4 mx-5 mb-4' style={{borderRadius: '13px'}}>
+            <Row className='mt-4 d-flex justify-content-center bg-dark py-4 mx-5 mb-4 gx-0' style={{borderRadius: '13px'}}>
          <Col md="2"></Col>
          <Col md='2' className='d-flex justify-content-center align-items-center mb-3'>
              <div className='property-center d-flex flex-column justify-content-center align-items-center px-2 text-center text-light'>

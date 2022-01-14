@@ -1,8 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import {
-  Row,
-  Col
-} from "reactstrap";
+import { Row, Col } from "reactstrap";
 import "./index.css";
 import DefaultCarousel from "./component/carousel";
 import Services from "./component/services";
@@ -20,7 +17,7 @@ function Main() {
       {/*in the desktop scale*/}
       <DesktopMenu />
 
-      <Row>
+      <Row className="gx-0">
         <div>
           <DefaultCarousel />
         </div>
@@ -28,9 +25,12 @@ function Main() {
       <Services />
       <Property />
       <FooterList />
-      <Row>
-        <Col sm="12" className='bg-dark text-light d-flex justify-content-center py-3'>
-            کپی رایت © - ۱۴۰۰- تیم طراح و توسعه دهنده نیترون
+      <Row className="gx-0">
+        <Col
+          sm="12"
+          className="bg-dark text-light d-flex justify-content-center py-3"
+        >
+          کپی رایت © - ۱۴۰۰- تیم طراح و توسعه دهنده نیترون
         </Col>
       </Row>
     </div>
