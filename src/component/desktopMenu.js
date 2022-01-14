@@ -1,31 +1,33 @@
-import {
-    Row,
-    Col,
-    Nav,
-    NavItem,
-    NavLink,
-    Badge
-  } from "reactstrap";
-
+import { Row, Col, Nav, NavItem, NavLink, Badge } from "reactstrap";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { SiNintendonetwork, SiTelegram, SiFacebook } from "react-icons/si";
-import {RiInstagramFill, RiWhatsappFill} from "react-icons/ri"
+import { RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
 
-const desktopMenu = () => {
-    return(
-        <>
-            <div
-        className="d-none d-md-block bg-dark"
-      >
-        
-           <Row className="pt-3 pb-3">
+const DesktopMenu = () => {
+  let navigate = useNavigate();
+
+  return (
+    <>
+      <div className="d-none d-md-block bg-dark">
+        <Row className="pt-3 pb-3 gx-0">
           <Col
             sm="2"
             className="d-flex justify-content-center align-items-center"
           >
-            <div style={{color: '#fff'}} className='d-flex align-items-center'>
-              <SiNintendonetwork size={25} style={{color: '#fff'}} />
-              <div style={{marginRight: '10px', fontWeight: 'bold', fontSize :'1.5rem'}}>
-              نیترون
+            <div
+              style={{ color: "#fff" }}
+              className="d-flex align-items-center"
+            >
+              <SiNintendonetwork size={25} style={{ color: "#fff" }} />
+              <div
+                style={{
+                  marginRight: "10px",
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                }}
+              >
+                نیترون
               </div>
             </div>
           </Col>
@@ -34,7 +36,7 @@ const desktopMenu = () => {
               <Nav>
                 <NavItem>
                   <NavLink
-                    style={{ color: "#fff", fontWeight: "bold"}}
+                    style={{ color: "#fff", fontWeight: "bold" }}
                     active
                     href="#"
                   >
@@ -46,6 +48,7 @@ const desktopMenu = () => {
                       }}
                       color="primary"
                       pill
+                      onClick={() => navigate("/")}
                     >
                       سیم کارت
                     </Badge>
@@ -61,6 +64,7 @@ const desktopMenu = () => {
                       }}
                       color="primary"
                       pill
+                      onClick={() => navigate("/offers")}
                     >
                       طرح و پیشنهادات
                     </Badge>
@@ -76,6 +80,7 @@ const desktopMenu = () => {
                       }}
                       color="primary"
                       pill
+                      onClick={() => navigate("/questions")}
                     >
                       سوالات پرتکرار
                     </Badge>
@@ -91,6 +96,7 @@ const desktopMenu = () => {
                       }}
                       color="primary"
                       pill
+                      onClick={() => navigate("/support")}
                     >
                       پشتیبانی
                     </Badge>
@@ -106,6 +112,7 @@ const desktopMenu = () => {
                       }}
                       color="primary"
                       pill
+                      onClick={() => navigate("/aboutUs")}
                     >
                       درباره نیترون
                     </Badge>
@@ -114,19 +121,18 @@ const desktopMenu = () => {
               </Nav>
             </div>
           </Col>
-          <Col md="2" className='d-none d-sm-block pt-2'>
-              <div className='d-flex justify-content-center align-items-center'>
-                      <RiInstagramFill color="#fff" size={25} className='mx-2'/>
-                      <RiWhatsappFill color="#fff" size={25} className='mx-2'/>
-                      <SiTelegram color="#fff" size={20} className='mx-2'/>
-                      <SiFacebook color="#fff" size={20} className='mx-2' />
-              </div>
+          <Col md="2" className="d-none d-sm-block p-0 m-0 pt-2">
+            <div className="d-flex justify-content-center align-items-center">
+              <RiInstagramFill color="#fff" size={25} className="mx-2" />
+              <RiWhatsappFill color="#fff" size={25} className="mx-2" />
+              <SiTelegram color="#fff" size={20} className="mx-2" />
+              <SiFacebook color="#fff" size={20} className="mx-2" />
+            </div>
           </Col>
         </Row>
       </div>
-      
-        </>
-    )
-}
+    </>
+  );
+};
 
-export default desktopMenu;
+export default DesktopMenu;
