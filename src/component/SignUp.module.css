@@ -168,3 +168,8 @@ input[type="checkbox"]:focus {
     width: 90%;
   }
 }
+
+.card_style{
+ background-color: #aeccf5;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
