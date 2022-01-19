@@ -127,6 +127,7 @@ const Signup = () => {
                 </div>
                 <div className={styles.formButtons}>
                     <Link to="/login">ورود</Link>
+                    <Link to="/"> بازگشت به صفحه اصلی </Link>
                     <button type="submit"> تایید اطلاعات</button>
                 </div>
             </form>

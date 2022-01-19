@@ -70,6 +70,7 @@ const Login = () => {
                     <Link to="/signup"> حساب کاربری ندارید؟ ثبت نام کنید</Link>
                     <button type="submit">ورود</button>
                 </div>
+                <Link to="/"> بازگشت به صفحه اصلی </Link>
             </form>
             <ToastContainer />
         </div>

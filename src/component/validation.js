@@ -6,7 +6,11 @@ export const validate = (data, type) => {
         errors.email = "ایمیل وارد شود"
     } else if (!/\S+@\S+\.\S+/.test(data.email)) {
         errors.email = "ایمیل به درستی وارد شود"
-    } else {
+    }
+    else if (data.email==="sara123@gmail.com") {
+        errors.email = "ایمیل یافت نشد"
+    }
+    else {
         delete errors.email
     }
 
@@ -14,7 +18,11 @@ export const validate = (data, type) => {
         errors.password = "پسورد وارد شود"
     } else if (data.password.length < 6) {
         errors.password = "پسورد باید 6 کاراکتر یا بیشتر باشد"
-    } else {
+    } 
+    else if (data.password==="asdfgh") {
+        errors.password = "کاربر یافت نشد"
+    }
+    else {
         delete errors.password
     }
 
